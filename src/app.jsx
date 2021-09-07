@@ -1,6 +1,8 @@
+import react from 'react';
 import React, { useEffect, useState } from 'react'
 import './app.css';
 import VideoList from './components/video_list';
+import Nav from './components/nav';
 function App() {
 
   const [ videos, setVideos] = useState([]);
@@ -16,7 +18,11 @@ function App() {
       .catch(error => console.log('error', error));
   },[])
   return (
-    <VideoList videos = {videos} />
+    <react.Fragment>
+      <Nav/>
+      <VideoList videos = {videos} />
+    </react.Fragment>
+    
   );
 }
 

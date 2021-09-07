@@ -1,0 +1,43 @@
+.container {
+  width: 50%;
+  padding: 0.2rem;
+}
+
+.video {
+  display: flex;
+  /* 상하배열을 중간 */
+  align-items: center;
+  /* 화면 중간정도 차지하게 하기! 그런데 border는 포함되어있지 않아서안댐 실제 50%보다는 많이 차지 */
+  box-shadow: 5px 5px 5px 0px #000000, 9px 19px 15px -3px rgba(0, 0, 0, 0);
+  /* 1px두께에  줄넣기 은색으로 */
+  border: 1px solid lightgray;
+  /* 마진을 밑에 넣는다 루트 엘리멘트 값의 0.2곱해서 얻는 값 */
+  margin-bottom: 0.2rem;
+  /* 커서 모양 바꾸기 : 클릭버튼처럼 보이게 하기 */
+  cursor: pointer;
+  /* transform할 시 애니메이션 넣기 */
+  transition: transform 250ms ease-in;
+}
+
+.video:hover {
+  /* 1.02배 크기로 만들어벌이자! */
+  transform: scale(1.02);
+}
+
+.thumbnail {
+  width: 40%;
+  height: 100%;
+}
+
+.title,
+.channel {
+  margin: 0;
+}
+
+.channel {
+  font-size: 0.9rem;
+}
+
+.metadata {
+  margin-left: 0.2em;
+}
