@@ -7,6 +7,7 @@ const VideoList = props => (
     {props.videos.map(video => (
       <VideoItem key={video.id} video={video} />
     ))}
+
   </ul>
 );
 
