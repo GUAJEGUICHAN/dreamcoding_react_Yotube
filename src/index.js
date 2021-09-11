@@ -5,7 +5,7 @@ import App from './app';
 import Youtube from './service/youtube';
 
 
-const youtube = new Youtube(process.env.REACT_APP_YOUTUBE_API_KEY);
+const youtube = new Youtube(process.env.REACT_APP_YOUTUBE_API_KEY);//키값 숨기기 성공
 ReactDOM.render(
   <React.StrictMode>
     <App Youtube={youtube}/>
